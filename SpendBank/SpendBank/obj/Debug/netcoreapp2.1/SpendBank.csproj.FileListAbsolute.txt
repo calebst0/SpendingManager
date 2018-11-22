@@ -1,0 +1,14 @@
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\bin\Debug\netcoreapp2.1\SpendBank.deps.json
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\bin\Debug\netcoreapp2.1\SpendBank.runtimeconfig.json
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\bin\Debug\netcoreapp2.1\SpendBank.runtimeconfig.dev.json
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\bin\Debug\netcoreapp2.1\SpendBank.dll
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\bin\Debug\netcoreapp2.1\SpendBank.pdb
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.csprojAssemblyReference.cache
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.csproj.CoreCompileInputs.cache
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.RazorAssemblyInfo.cache
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.RazorAssemblyInfo.cs
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.AssemblyInfoInputs.cache
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.AssemblyInfo.cs
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.RazorTargetAssemblyInfo.cache
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.dll
+C:\Users\Caleb\Documents\github\SpendingManager\SpendBank\SpendBank\obj\Debug\netcoreapp2.1\SpendBank.pdb
