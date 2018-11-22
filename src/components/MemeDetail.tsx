@@ -16,7 +16,7 @@ export default class MemeDetail extends React.Component<IProps, IState> {
         this.state = {
             open: false
         }
-        this.updateMeme = this.updateMeme.bind(this)
+        this.updateTransaction = this.updateTransaction.bind(this)
     }
 
 	public render() {
@@ -25,36 +25,41 @@ export default class MemeDetail extends React.Component<IProps, IState> {
 		return (
 			<div className="container meme-wrapper">
                 <div className="row meme-done-button">
-                    <div className="btn btn-primary btn-action" onClick={this.downloadMeme.bind(this, currentMeme.url)}>Download </div>
                     <div className="btn btn-primary btn-action" onClick={this.onOpenModal}>Edit </div>
-                    <div className="btn btn-primary btn-action" onClick={this.deleteMeme.bind(this, currentMeme.id)}>Delete </div>
+                    <div className="btn btn-primary btn-action" onClick={this.deleteTransaction.bind(this, currentMeme.id)}>Delete </div>
                 </div>
-                <div className="row meme-heading">
-                    <b>{currentMeme.title}</b>&nbsp; ({currentMeme.tags})
+
+                <div className='mt-4'>TRANSACTION DETAIL:</div>
+
+                <div className='mt-4'>
+                    <div className="row meme-heading">
+                        <p>Title: </p>
+                        <b>{" " + currentMeme.title}</b> 
+                    </div>
+                    <div className="row">
+                        <p>{"Tag: "}</p>
+                        <b>({(currentMeme.tags)})</b>
+                    </div>
+                    <div className="row meme-date">
+                        {currentMeme.uploaded}
+                    </div>
                 </div>
-                <div className="row meme-date">
-                    {currentMeme.uploaded}
-                </div>
-                <div className="row meme-img">
-                    <img src={currentMeme.url}/>
-                </div>
-                
-                
+
                 <Modal open={open} onClose={this.onCloseModal}>
                     <form>
                         <div className="form-group">
-                            <label>Meme Title</label>
+                            <label>New Transaction name</label>
                             <input type="text" className="form-control" id="meme-edit-title-input" placeholder="Enter Title"/>
-                            <small className="form-text text-muted">You can edit any meme later</small>
+                            <small className="form-text text-muted">You can edit any transaction later</small>
                         </div>
                         <div className="form-group">
                             <label>Tag</label>
                             <input type="text" className="form-control" id="meme-edit-tag-input" placeholder="Enter Tag"/>
                             <small className="form-text text-muted">Tag is used for search</small>
                         </div>
-                        <button type="button" className="btn" onClick={this.updateMeme}>Save</button>
+                        <button type="button" className="btn" onClick={this.updateTransaction}>Save</button>
                     </form>
-                </Modal>
+                </Modal>  
             </div>
 		);
     }
@@ -69,12 +74,7 @@ export default class MemeDetail extends React.Component<IProps, IState> {
 		this.setState({ open: false });
     };
 
-    // Open meme image in new tab
-    private downloadMeme(url: any) {
-        window.open(url);
-    }
-
-    private updateMeme(){
+    private updateTransaction(){
         const titleInput = document.getElementById("meme-edit-title-input") as HTMLInputElement
         const tagInput = document.getElementById("meme-edit-tag-input") as HTMLInputElement
     
@@ -109,7 +109,7 @@ export default class MemeDetail extends React.Component<IProps, IState> {
         })
     }
 
-    private deleteMeme(id: any) {
+    private deleteTransaction(id: any) {
         const url = "http://phase2apitest.azurewebsites.net/api/meme/" + id
     
         fetch(url, {
